@@ -1,5 +1,8 @@
 public class TimeInterval implements Comparable<TimeInterval> {
-...
+	
+	private Integer startTime;
+	private Integer endTime;
+	
 	@Override
 	public int compareTo(TimeInterval that) {
 		if (startTime.compareTo(that.endTime) > 0) {
@@ -10,4 +13,22 @@ public class TimeInterval implements Comparable<TimeInterval> {
 		}
 		return 0;
 	}
+
+	public Integer getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(Integer startTime) {
+		this.startTime = startTime;
+	}
+
+	public Integer getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(Integer endTime) {
+		this.endTime = endTime;
+	}
+	
+	
 }

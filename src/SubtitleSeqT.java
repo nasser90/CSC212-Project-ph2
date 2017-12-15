@@ -1,33 +1,33 @@
 
-public class SubtitleSeqT implements SubtitleSeq {
+public class SubtitleSeqT<K extends Comparable<K>, T> implements SubtitleSeq {
+	
+	private SortedBST<K, T> sbst;
+	
+	public SubtitleSeqT(){
+		sbst = new SortedBST<>();
+	}
 
 	public void addSubtitle(Subtitle st) {
-		// TODO Auto-generated method stub
-		
+		sbst.insert(, st);
 	}
 
 	public List<Subtitle> getSubtitles() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public Subtitle getSubtitle(Time time) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public int nbNodesInSearchPath(Time time) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	public List<Subtitle> getSubtitles(Time startTime, Time endTime) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public void shift(int offset) {
-		// TODO Auto-generated method stub
 		
 	}
 
